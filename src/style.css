@@ -12,7 +12,7 @@
     --main-bg: #010101;
     --accent-color: #BF8730;
     --heading-color: #ffead0;
-    --text-color: rgba(255, 255, 255, 0.65);
+    --text-color: rgba(255, 255, 255, 0.6);
     --heading-secondary: rgba(255, 255, 255, 0.88);
     --text-secondary: #828282;
     --light-color: #E6E6E6;
@@ -20,8 +20,15 @@
 }
 
 
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+section, nav {
+    scroll-snap-align: start;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
     color: var(--heading-color);
 }
 
@@ -118,7 +125,84 @@ nav {
     transition: all 0.3s ease forwards;
 }
 
-/* hover finished... */
+/* navbar finished... */
 
 
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+    margin-top: 3rem;
+}
 
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45%;
+    margin-left: 50px;
+    
+}
+
+.hero-content h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--heading-color);
+}
+
+.hero-image {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    padding: 2%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.hero-content p {
+    color: var(--text-color)
+}
+
+.hero-content p span {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.hero-content button{
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    transition: all 0.5s ease;
+    width: 25%;
+    height: 50px;
+    font-weight: 600;
+}
+
+
+.hero-content button:hover {
+    background-color: #000;
+    color: var(--accent-color);
+    scale: 1.05;
+}

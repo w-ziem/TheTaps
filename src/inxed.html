@@ -4,128 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The taps</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="The Taps - Multitap w sercu Warszawy. Twoje nowe ulubione miejsce z piwem kraftowym, pizzą i przestrzenią na imprezy firmowe.">
+    <meta name="keywords" content="The Taps, multitap, piwo kraftowe, pizza, Warszawa, bar, imprezy firmowe, rezerwacja">
+    <meta property="og:title" content="The Taps - Multitap w sercu Warszawy">
+    <meta property="og:description" content="Twoje nowe ulubione miejsce z piwem kraftowym, pizzą i przestrzenią na imprezy firmowe w centrum Warszawy.">
+    <meta property="og:image" content="https://thetaps.example.com/resources/logo.jpg">
+    <meta property="og:url" content="https://thetaps.example.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Taps - Multitap w sercu Warszawy">
+    <meta name="twitter:description" content="Bar z piwem kraftowym, pizzą i ofertą eventową w centrum Warszawy.">
+    <meta name="twitter:image" content="https://thetaps.example.com/resources/logo.jpg">
+    <link rel="canonical" href="https://thetaps.example.com/">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="offer.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="reservation.css">
-    <link rel="stylesheet" href="banners.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="main">
-    <nav>
-        <div class="left">
-            <div class="logo"><img src="../resources/logo.jpg" alt="A round logo with The Taps written on it"></div>
-            <a target="_blank" href="https://www.google.com/maps/place/The+Taps/@52.2345625,21.0099109,508m/data=!3m3!1e3!4b1!5s0x471932c136b5fc1b:0x3a8ae0df82c945c8!4m6!3m5!1s0x471eccf4d808996d:0xf98e6fcf37ae42c5!8m2!3d52.2345592!4d21.0124858!16s%2Fg%2F11dxbcw_h1?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
-        </div>
-        <!-- TODO:#IMPORTANT zrobić to jako zakładki a nie jako inne strony html -->
-        <ul class="right">
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="oferta.html">Oferta</a></li>
-            <li><a href="kontakt.html"><button class="contact-button">Kontakt</button></a></li>
-        </ul>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>The taps - Multitap w sercu Warszawy</h1>
-            <p>Twój nowy ulubiony bar z kraftowym piwem <span>🍺</span>, prawdziwą włoską pizzą <span>🍕</span> i przestrzenią idealną na imprezy firmowe!</p>
-            <a href="rezerwacja.html"><button class="reservation-button">Rezerwuję!</button></a>
-        </div>
-        <div class="hero-image"><img src="../resources/wspolne1.png" alt="A photo of multiple people holding drinks"></div>
-    </section>
-
-    </div>
-
-
-    <section class="about">
-        <div class="about-content">
-            <h2>Wyjątkowa atmosfera i oferta dla firm</h2>
-            <p>W samym centurm Warszawy, przy klimatycznych dębowych stołach i funkcjonalnym zapleczu eventowym, "The Taps" łączy pasje do piw kraftowych z autentycznym smakiem włoskiej pizzy. To idealne miejsce na: </p>
-        </div>
-        <div class="cards-container">
-            <div class="card">
-                <img src="../resources/drink.png" alt="">
-                <p>Spotkania Integracyjne</p>
+        <nav>
+            <div class="left">
+                <div class="logo"><img src="../resources/logo.jpg" alt="A round logo with The Taps written on it"></div>
+                <a target="_blank" href="https://www.google.com/maps/place/The+Taps/..." class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
             </div>
-            <div class="card">
-                <img src="../resources/spotkanie.png" alt="">
-                <p>Luźne spotkania after-work z zespołem</p>
-            </div>
-            <div class="card">
-                <img src="../resources/planszowka.png" alt="">
-                <p>Organizacje quizów oraz wieczorów gier planszowych</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="offer">
-        <div class="offer-content">
-            <h2>Piwa, pizza i więcej - wszystko, czego potrzebujesz</h2>
-            <ul>
-                <li>
-                    <h4>Aż 15 kranów z piwami kraftowymi</h4>
-                    <p>selekcja najlepszych polskich i zagranicznych browarów.</p>
-                </li>
-                                <li>
-                    <h4>Pizza neapolitańska</h4>
-                    <p>wypiekana w kamiennym piecu, z oryginalnych włoskich składników.</p>
-                </li>
-                                <li>
-                    <h4>Drinki i alkohole</h4>
-                    <p>od klasycznych koktajli, przez wina po unikalne propozycje na bazie rumu, whiskey i ginów.</p>
-                </li>
+            <ul class="right">
+                <li><a href="#home-page">Strona główna</a></li>
+                <li><a href="#menu-page">Menu</a></li>
+                <li><a href="#oferta-page">Oferta</a></li>
+                <li><a href="#kontakt-page"><button class="contact-button">Kontakt</button></a></li>
             </ul>
-            <div class="buttons">
-                <a href="menu.html"><button class="menu-button">Menu</button></a>
-                <a target="_blank" href="https://the-taps.ontap.pl/"><button class="ontap-button">Aktualne piwa na kranach</button></a>
+        </nav>
+
+        <section id="home-page" class="section">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>The taps - Multitap w sercu Warszawy</h1>
+                    <p>Twój nowy ulubiony bar z kraftowym piwem <span>🍺</span>, prawdziwą włoską pizzą <span>🍕</span> i przestrzenią idealną na imprezy firmowe!</p>
+                    <a href="#konakt-page"><button class="reservation-button">Rezerwuję!</button></a>
+                </div>
+                <div class="hero-image"><img src="../resources/wspolne1.png" alt="A photo of multiple people holding drinks"></div>
+            </section>
+        
+
+        <section class="about">
+            <div class="about-content">
+                <h2>Wyjątkowa atmosfera i oferta dla firm</h2>
+                <p>W samym centurm Warszawy, przy klimatycznych dębowych stołach i funkcjonalnym zapleczu eventowym, "The Taps" łączy pasje do piw kraftowych z autentycznym smakiem włoskiej pizzy. To idealne miejsce na: </p>
             </div>
-        </div>
-        <div class="offer-image"><img src="../resources/pizza.png" alt="A photo of two pizzas"></div>
-    </section>
-
-    <div class="gallery"><img src="../resources/lokal.webp" alt="A photo of the interior of the bar"></div>
-    
-    <h2 class="reservation-heading">Gotowi na wyjątkowe wydarzenie?</h2>
-    <section class="reservation">
-        <div class="reservation-content">
-            <h3>Rezerwacja w 3 prostych krokach</h3>
-            <ol>
-                <li>Kontakt - wypełnij formularz lub zadzwoń +48 123 456 789</li>
-                <li>Dobierz menu lub zarezerwuj stolik</li>
-                <li>My przygotowujemy przestrzeń i potwierdzamy rezerwację, Ty cieszysz się wieczorem</li>
-            </ol>
-        </div>
-        <a href="rezerwacja.html"><button class="reservation-button">Kontaktuję Się!</button></a>
-    </section>
-
-    <section class="banner-container">
-        <div class="banner"><img src="../resources/jedzenie1.png" alt=""></div>
-        <div class="banner"><img src="../resources/promocja.png" alt=""></div>
-        <div class="banner"><img src="../resources/zero.png" alt=""></div>
-    </section>
-
-
-    <footer>
-        <div class="logo"><img src="../resources/logo.jpg" alt=""></div>
-        <div class="footer-content">
-            <div class="location">
-                <p>The Taps</p>
-                <a target="_blank" href="https://www.google.com/maps/place/The+Taps/@52.2345625,21.0099109,508m/data=!3m3!1e3!4b1!5s0x471932c136b5fc1b:0x3a8ae0df82c945c8!4m6!3m5!1s0x471eccf4d808996d:0xf98e6fcf37ae42c5!8m2!3d52.2345592!4d21.0124858!16s%2Fg%2F11dxbcw_h1?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoASAFQAw%3D%3D" class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
-                <p>00-015 Warszawa, Polska</p>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="../resources/drink.png" alt="">
+                    <p>Spotkania Integracyjne</p>
+                </div>
+                <div class="card">
+                    <img src="../resources/spotkanie.png" alt="">
+                    <p>Luźne spotkania after-work z zespołem</p>
+                </div>
+                <div class="card">
+                    <img src="../resources/planszowka.png" alt="">
+                    <p>Organizacje quizów oraz wieczorów gier planszowych</p>
+                </div>
             </div>
-            <div class="company-info">
-                <p>NIP: 1234567890</p>
-                <p>REGON: 123456789</p>
-                <p>Tel: +48 123 456 789</p>
+        </section>
+        <section class="offer">
+            <div class="offer-content">
+                <h2>Piwa, pizza i więcej - wszystko, czego potrzebujesz</h2>
+                <ul>
+                    <li>
+                        <h4>Aż 15 kranów z piwami kraftowymi</h4>
+                        <p>selekcja najlepszych polskich i zagranicznych browarów.</p>
+                    </li>
+                    <li>
+                        <h4>Pizza neapolitańska</h4>
+                        <p>wypiekana w kamiennym piecu, z oryginalnych włoskich składników.</p>
+                    </li>
+                    <li>
+                        <h4>Drinki i alkohole</h4>
+                        <p>od klasycznych koktajli, przez wina po unikalne propozycje na bazie rumu, whiskey i ginów.</p>
+                    </li>
+                </ul>
+                <div class="buttons">
+                    <a href="#menu-page"><button class="menu-button">Menu</button></a>
+                    <a target="_blank" href="https://the-taps.ontap.pl/"><button class="ontap-button">Aktualne piwa na kranach</button></a>
+                </div>
             </div>
-        </div>
-        <div class="social-media">
-            <a href="https://www.instagram.com/thetapswarsaw/">Instagram</a>
-            <a href="https://www.facebook.com/TheTapsWarsaw">Facebook</a>
-    </footer>
+            <div class="offer-image"><img src="../resources/pizza.png" alt="A photo of two pizzas"></div>
+        </section>
 
-    <script src="script.js"></script>
+        <div class="gallery"><img src="../resources/lokal.webp" alt="A photo of the interior of the bar"></div>
+
+        <h2 class="reservation-heading">Gotowi na wyjątkowe wydarzenie?</h2>
+        <section class="reservation">
+            <div class="reservation-content">
+                <h3>Rezerwacja w 3 prostych krokach</h3>
+                <ol>
+                    <li>Kontakt - wypełnij formularz lub zadzwoń +48 123 456 789</li>
+                    <li>Dobierz menu lub zarezerwuj stolik</li>
+                    <li>My przygotowujemy przestrzeń i potwierdzamy rezerwację, Ty cieszysz się wieczorem</li>
+                </ol>
+            </div>
+            <a href="#kontakt-page"><button class="reservation-button">Kontaktuję Się!</button></a>
+        </section>
+
+        <section class="banner-container">
+            <div class="banner"><img src="../resources/jedzenie1.png" alt=""></div>
+            <div class="banner"><img src="../resources/promocja.png" alt=""></div>
+            <div class="banner"><img src="../resources/zero.png" alt=""></div>
+        </section>
+</section>
+        <section id="oferta-page" class="section">
+            <section class="offer-section" id="oferta">
+                <div class="container">
+                    <h2 class="section-title">Zorganizuj swój event w naszym lokalu</h2>
+                    <p class="intro">
+                        Szukasz miejsca na imprezę firmową, działówkę, integrację lub inne wydarzenie specjalne?
+                        <strong>The Taps</strong> to przestrzeń stworzona z myślą o takich spotkaniach.
+                    </p>
+                    <div class="spaces">
+                        <div class="space-box">
+                            <h3>🏢 Wynajem całego lokalu</h3>
+                            <p>Pomieścimy od 100 do 180 osób. Idealnie na duże eventy z rozmachem.</p>
+                        </div>
+                        <div class="space-box">
+                            <h3>🍷 Sala na poziomie -1</h3>
+                            <p>Kameralna przestrzeń z klimatem, idealna na prywatne imprezy.</p>
+                        </div>
+                        <div class="space-box">
+                            <h3>🛋️ Antresola</h3>
+                            <p>Świetna do chilloutu, małych grup lub jako strefa VIP.</p>
+                        </div>
+                    </div>
+                    <ul class="offer-list">
+                        <li>🍸 Open bar z naszymi autorskimi koktajlami</li>
+                        <li>🍕 Catering dopasowany do Twoich potrzeb</li>
+                        <li>📋 Wsparcie organizacyjne od A do Z</li>
+                    </ul>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <strong>8 lat</strong>
+                            <span>doświadczenia</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>500+</strong>
+                            <span>zorganizowanych eventów</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>1000+</strong>
+                            <span>zadowolonych gości</span>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <h3>Chcesz zorganizować event w The Taps?</h3>
+                        <a href="#kontakt-page" class="cta-button">Zarezerwuj termin</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="menu-page" class="section"></section>
+        <section id="onas-page" class="section"></section>
+        <section id="kontakt-page" class="section"></section>
+
+        <footer>
+            <div class="logo"><img src="../resources/logo.jpg" alt=""></div>
+            <div class="footer-content">
+                <div class="location">
+                    <p>The Taps</p>
+                    <a target="_blank" href="https://www.google.com/maps/place/The+Taps/..." class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
+                    <p>00-015 Warszawa, Polska</p>
+                </div>
+                <div class="company-info">
+                    <p>NIP: 1234567890</p>
+                    <p>REGON: 123456789</p>
+                    <p>Tel: +48 123 456 789</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/thetapswarsaw/">Instagram</a>
+                <a href="https://www.facebook.com/TheTapsWarsaw">Facebook</a>
+            </div>
+        </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        function showSectionFromHash() {
+            const hash = window.location.hash.replace('#', '') || 'home-page';
+            sections.forEach(s => s.style.display = s.id === hash ? 'block' : 'none');
+        }
+
+        window.addEventListener('hashchange', showSectionFromHash);
+        window.addEventListener('load', showSectionFromHash);
+    </script>
 </body>
-</html>
+</html> 

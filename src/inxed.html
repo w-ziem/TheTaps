@@ -23,7 +23,7 @@
         <nav>
             <div class="left">
                 <div class="logo"><img src="../resources/logo.jpg" alt="A round logo with The Taps written on it"></div>
-                <a target="_blank" href="https://www.google.com/maps/place/The+Taps/..." class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
+                <a target="_blank" href="https://www.google.com/maps/place/The+Taps/@52.2345625,21.0099109,508m/data=!3m3!1e3!4b1!5s0x471932c136b5fc1b:0x3a8ae0df82c945c8!4m6!3m5!1s0x471eccf4d808996d:0xf98e6fcf37ae42c5!8m2!3d52.2345592!4d21.0124858!16s%2Fg%2F11dxbcw_h1?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
             </div>
             <ul class="right">
                 <li><a href="#home-page">Strona główna</a></li>
@@ -109,7 +109,7 @@
             <div class="banner"><img src="../resources/promocja.png" alt=""></div>
             <div class="banner"><img src="../resources/zero.png" alt=""></div>
         </section>
-</section>
+        </section>
         <section id="oferta-page" class="section">
             <section class="offer-section" id="oferta">
                 <div class="container">
@@ -137,6 +137,12 @@
                         <li>🍕 Catering dopasowany do Twoich potrzeb</li>
                         <li>📋 Wsparcie organizacyjne od A do Z</li>
                     </ul>
+
+                    <p class="intro small">
+                        Jesteśmy elastyczni. Każde wydarzenie traktujemy indywidualnie. Dopasujemy przestrzeń, menu i styl imprezy do Twoich oczekiwań.
+                        <a href="#kontakt-page"><strong>Skontaktuj się z nami</strong></a>, a stworzymy ofertę idealną dla Ciebie i Twojego zespołu.
+                    </p>
+
                     <div class="stats">
                         <div class="stat-box">
                             <strong>8 lat</strong>
@@ -161,20 +167,64 @@
 
         <section id="menu-page" class="section"></section>
         <section id="onas-page" class="section"></section>
-        <section id="kontakt-page" class="section"></section>
+        <section id="kontakt-page" class="contact-section">
+            <div class="container">
+                <h1 class="contact-title">Skontaktuj się z nami!</h1>
+                <p class="contact-intro">
+                Masz pytania, chcesz zarezerwować termin lub zorganizować event szyty na miarę?
+                Wypełnij formularz lub skontaktuj się z nami bezpośrednio!
+                </p>
+
+                <div class="contact-grid">
+                <!-- FORMULARZ -->
+                <form id="contact-form" name="submit-to-google-sheet" class="contact-form">
+                    <label for="name">Imię i Nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button id="submit" type="submit" class="btn-gold">Wyślij wiadomość</button>
+                    <p id="status"></p>
+                </form>
+
+                <!-- DANE KONTAKTOWE -->
+                <div class="contact-info">
+                    <h2>Możesz też napisać lub zadzwonić:</h2>
+                    <ul>
+                    <li>📧 Email: <a href="mailto:biuro@thetaps.pl">biuro@thetaps.pl</a></li>
+                    <li>📞 Telefon: <a href="tel:+48601707407">+48 601 707 407</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            <p class="cta-para">Zorganizuj niezapomniane wydarzenie z The Taps. Czekamy na Twój kontakt!</p>
+            <div class="map-box">
+                <h3>Znajdziesz nas tutaj:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2211.2273861264157!2d21.012485799999997!3d52.2345592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf4d808996d%3A0xf98e6fcf37ae42c5!2sThe%20Taps!5e1!3m2!1spl!2spl!4v1750970789590!5m2!1spl!2spl" width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        </section>
 
         <footer>
             <div class="logo"><img src="../resources/logo.jpg" alt=""></div>
             <div class="footer-content">
                 <div class="location">
                     <p>The Taps</p>
-                    <a target="_blank" href="https://www.google.com/maps/place/The+Taps/..." class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
+                    <a target="_blank" href="https://www.google.com/maps/place/The+Taps/@52.2345625,21.0099109,508m/data=!3m3!1e3!4b1!5s0x471932c136b5fc1b:0x3a8ae0df82c945c8!4m6!3m5!1s0x471eccf4d808996d:0xf98e6fcf37ae42c5!8m2!3d52.2345592!4d21.0124858!16s%2Fg%2F11dxbcw_h1?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
                     <p>00-015 Warszawa, Polska</p>
                 </div>
                 <div class="company-info">
-                    <p>NIP: 1234567890</p>
-                    <p>REGON: 123456789</p>
-                    <p>Tel: +48 123 456 789</p>
+                    <p>NIP: 5252688027</p>
+                    <p>REGON: 366068572</p>
+                    <p>Tel: +48 601 707 407</p>
                 </div>
             </div>
             <div class="social-media">

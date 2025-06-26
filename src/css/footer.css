@@ -33,12 +33,12 @@ footer .logo img {
     justify-self: end;
 }
 
-.social-media a{
+a{
     text-decoration: none;
     color: var(--text-color);
     transition: all 0.3s ease;
 }
 
-.social-media a:hover{
+a:hover{
     color: var(--light-color);
 }

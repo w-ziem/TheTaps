@@ -19,14 +19,18 @@
     --heading-font: 'Bebas Neue', sans-serif;
 }
 
-/* 
-html{
+
+/* html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
-section, nav {
+section, nav, footer {
     scroll-snap-align: start;
 } */
+
+a {
+    text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);

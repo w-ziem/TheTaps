@@ -23,7 +23,7 @@ footer .logo img {
 
 .footer-content{
     display: flex;
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .social-media{
@@ -41,4 +41,9 @@ a{
 
 a:hover{
     color: var(--light-color);
+}
+
+
+.repository{
+    margin-left:auto
 }

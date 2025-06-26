@@ -94,6 +94,7 @@
 
 .contact-info li {
   margin-bottom: 10px;
+  color: var(--light-color);
 }
 
 .contact-info a {
@@ -115,7 +116,7 @@
 .cta-para {
   text-align: center;
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .map-box {
@@ -129,6 +130,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.map-box h3{
+  font-size: 1.2rem;
 }
 
 

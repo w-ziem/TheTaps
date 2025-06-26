@@ -31,7 +31,7 @@
 .offer-image img{
     max-width: 100%;
     min-width: none;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
     transition: all 0.3s ease;

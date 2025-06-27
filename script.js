@@ -18,24 +18,25 @@ const statusElement = document.getElementById('status');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    statusElement.textContent = 'Sending...';
+    statusElement.style.color = 'rgba(255, 255, 255, 0.6)';
+    statusElement.textContent = 'Wysyłanie...';
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             console.log('Success!', response);
             statusElement.textContent = 'Wiadomość została wysłana!';
             statusElement.style.color = 'green';
-            sleep(2000).then(() => {
+            setTimeout(() => {
                 statusElement.textContent = '';
-            });
+            }, 3000);
             form.reset();
         })
         .catch(error => {
             console.error('Error!', error.message);
             statusElement.textContent = 'Błąd wysyłania wiadomości. Spróbuj ponownie.';
             statusElement.style.color = 'red';
-            sleep(2000).then(() => {
-                statusElement.textContent = '';
-            });
+            setTimeout(() => {
+            statusElement.textContent = '';
+            }, 3000);
         });
 });

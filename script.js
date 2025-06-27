@@ -28,7 +28,7 @@ form.addEventListener('submit', e => {
             statusElement.style.color = 'green';
             setTimeout(() => {
                 statusElement.textContent = '';
-            }, 3000);
+            }, 8000);
             form.reset();
         })
         .catch(error => {
@@ -37,6 +37,6 @@ form.addEventListener('submit', e => {
             statusElement.style.color = 'red';
             setTimeout(() => {
             statusElement.textContent = '';
-            }, 3000);
+            }, 8000);
         });
 });

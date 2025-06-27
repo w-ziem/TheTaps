@@ -16,8 +16,8 @@
     <meta name="twitter:description" content="Bar z piwem kraftowym, pizzą i ofertą eventową w centrum Warszawy.">
     <meta name="twitter:image" content="https://thetaps.example.com/resources/images/logo.png">
     <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="apple-touch-icon" href="../resources/images/logo.png">
-    <link rel="shortcut icon" href="../resources/images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
     <link rel="canonical" href="https://thetaps.example.com/">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,7 +26,7 @@
 <body>
         <nav>
             <div class="left">
-                <div class="logo"><img src="../resources/images/logo.png" alt="A round logo with The Taps written on it"></div>
+                <div class="logo"><img src="images/logo.png" alt="A round logo with The Taps written on it"></div>
                 <a target="_blank" href="https://www.google.com/maps/place/The+Taps/@52.2345625,21.0099109,508m/data=!3m3!1e3!4b1!5s0x471932c136b5fc1b:0x3a8ae0df82c945c8!4m6!3m5!1s0x471eccf4d808996d:0xf98e6fcf37ae42c5!8m2!3d52.2345592!4d21.0124858!16s%2Fg%2F11dxbcw_h1?entry=ttu&g_ep=EgoyMDI1MDYyMi4wIKXMDSoASAFQAw%3D%3D" class="lokalicaja">Henryka Sienkiewicza 4, Warszawa</a>
             </div>
             <ul class="right">
@@ -45,7 +45,7 @@
 </p>
                     <a href="#kontakt-page"><button class="reservation-button">Rezerwuję!</button></a>
                 </div>
-                <div class="hero-image"><img src="../resources/images/hero.png" alt="A photo of multiple people holding drinks"></div>
+                <div class="hero-image"><img src="images/hero.png" alt="A photo of multiple people holding drinks"></div>
             </section>
         
 
@@ -56,15 +56,15 @@
             </div>
             <div class="cards-container">
                 <div class="card">
-                    <img src="../resources/images/integracja.png" alt="">
+                    <img src="images/integracja.png" alt="">
                     <p>Spotkania Integracyjne</p>
                 </div>
                 <div class="card">
-                    <img src="../resources/images/afterwork.png" alt="">
+                    <img src="images/afterwork.png" alt="">
                     <p>Luźne spotkania after-work z zespołem</p>
                 </div>
                 <div class="card">
-                    <img src="../resources/images/planszowka.png" alt="">
+                    <img src="images/planszowka.png" alt="">
                     <p>Organizacja quizów oraz wieczorów gier planszowych</p>
                 </div>
             </div>
@@ -95,10 +95,10 @@
                     <a target="_blank" href="https://the-taps.ontap.pl/"><button class="ontap-button">Aktualne piwa na kranach</button></a>
                 </div>
             </div>
-            <div class="offer-image"><img src="../resources/images/foodanddrink.png" alt="A photo of two pizzas"></div>
+            <div class="offer-image"><img src="images/foodanddrink.png" alt="A photo of two pizzas"></div>
         </section>
 
-        <div class="gallery"><img src="../resources/images/lokal.webp" alt="A photo of the interior of the bar"></div>
+        <div class="gallery"><img src="images/lokal.webp" alt="A photo of the interior of the bar"></div>
 
         <h2 class="reservation-heading">Gotowi na wyjątkowe wydarzenie?</h2>
         <section class="reservation">
@@ -114,9 +114,9 @@
         </section>
 
         <section class="banner-container">
-            <div class="banner"><img src="../resources/images/piwo.png" alt=""></div>
-            <div class="banner"><img src="../resources/images/middle.png" alt=""></div>
-            <div class="banner"><img src="../resources/images/zero.png" alt=""></div>
+            <div class="banner"><img src="images/piwo.png" alt=""></div>
+            <div class="banner"><img src="images/middle.png" alt=""></div>
+            <div class="banner"><img src="images/zero.png" alt=""></div>
         </section>
         </section>
         <section id="oferta-page" class="section">
@@ -188,16 +188,16 @@
                 <!-- FORMULARZ -->
                 <form id="contact-form" name="submit-to-google-sheet" class="contact-form">
                     <label for="name">Imię i Nazwisko:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required placeholder="Jan Kowalski">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required placeholder="jan.kowalski@gmail.com">
 
                     <label for="phone">Telefon:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required placeholder="+48 123 456 789">
 
                     <label for="message">Wiadomość:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" required placeholder="Napisz swoją wiadomość..."></textarea>
 
                     <button id="submit" type="submit" class="btn-gold">Wyślij wiadomość</button>
                     <p id="status"></p>
@@ -223,7 +223,7 @@
         </section>
 
         <footer>
-            <div class="logo"><img src="../resources/images/logo.png" alt=""></div>
+            <div class="logo"><img src="images/logo.png" alt=""></div>
             <div class="footer-content">
                 <div class="location">
                     <p>The Taps</p>
@@ -245,16 +245,7 @@
 </svg></a>
         </footer>
 
-    <script>
-        const sections = document.querySelectorAll('.section');
-
-        function showSectionFromHash() {
-            const hash = window.location.hash.replace('#', '') || 'home-page';
-            sections.forEach(s => s.style.display = s.id === hash ? 'block' : 'none');
-        }
-
-        window.addEventListener('hashchange', showSectionFromHash);
-        window.addEventListener('load', showSectionFromHash);
-    </script>
+    <script src="script.js"></script>
+ 
 </body>
 </html> 

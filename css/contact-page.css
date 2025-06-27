@@ -164,3 +164,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+#status{
+  transition: all 0.3s ease;
+}

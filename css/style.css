@@ -16,6 +16,7 @@
     --heading-secondary: rgba(255, 255, 255, 0.88);
     --text-secondary: #828282;
     --light-color: #E6E6E6;
+    --menu-bg: #1D1E1C;
     --heading-font: 'Bebas Neue', sans-serif;
 }
 
@@ -233,4 +234,21 @@ nav {
     color: var(--accent-color);
 }
 
+.menu-container{
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15rem;
+}
 
+.menu-page {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px var(--accent-color);
+
+}

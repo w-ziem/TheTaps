@@ -111,27 +111,19 @@ nav {
 }
 
 
-/* TODO: fix animation snap-backing */
 .logo img:hover {
-    animation: spin 2.5s ease-in-out forwards;
-    animation-fill-mode: forwards;
-}
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(1080deg);
-    }
+    scale: 1.05;
 }
 
 .logo img {
     transition: all 0.3s ease forwards;
 }
 
-/* navbar finished... */
-
+/* .logo img:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px var(--accent-color);
+} */
 
 .hero {
     display: flex;
